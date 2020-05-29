@@ -1,0 +1,8 @@
+.vscode
+*.aux
+*.log
+ts_tech_doc_main.out
+ts_tech_doc_main.pdf
+ts_tech_doc_main.thm
+ts_tech_doc_main.toc
+ts_tech_doc_main.synctex.gz

@@ -18,7 +18,7 @@ LaTeX 的创始者 Leslie Lamport 曾被问道人们在使用 LaTeX 时应停止
 >
 >"Worrying too much about formatting and not enough about content."
 
-这个回答也同样适用于ts_tech_doc的使用者。 技术文档写作最重要的是通过规范的写作表达自己的思想和成果，而不是纠结于某些格式及样子上的差异。当花费过多的时间关注和修葺文档的格式而非内容时，往往是想逃避写作而表现出的拖延症状。在此，与大家共省。
+这个回答也同样适用于ts_docs的使用者。 技术文档写作最重要的是通过规范的写作表达自己的思想和成果，而不是纠结于某些格式及样子上的差异。当花费过多的时间关注和修葺文档的格式而非内容时，往往是想逃避写作而表现出的拖延症状。在此，与大家共省。
 
 本项目的目的是为了创建一个符合成都图迅科技有限公司技术文档撰写规范的TeX模板，解决各类技术文档撰写时格式调整的痛点。
 
@@ -33,11 +33,11 @@ LaTeX 的创始者 Leslie Lamport 曾被问道人们在使用 LaTeX 时应停止
 7. 附录（必要时）；
 
 ## 版本状况
-此版本为通用版本，具体技术文档需要自行修改`ts_tech_doc.cls`文件。
+此版本为通用版本，具体技术文档需要自行修改`ts_docs.cls`文件。
 
 ## 文件介绍
 
-### `ts_tech_doc.cls`
+### `ts_docs.cls`
 
 样式文件，通用版本，具体文档可能要更改此文件。
 
@@ -54,7 +54,7 @@ LaTeX 的创始者 Leslie Lamport 曾被问道人们在使用 LaTeX 时应停止
 
 `content.tex`：从绪论到总结的全部正文内容。`\cite`的时候可能因为tex文件与主文件分离，LaTeX环境配置不到位，会有找不到bib的提示（Texlive+sublime会这样），没关系，照常插入需要的bibkey即可。
 
-### `ts_tech_doc_main.tex`
+### `ts_docs_main.tex`
 
 文档主文件，正常情况下不用修改这个文件，以这个文件编译文档即可。
 
@@ -74,7 +74,7 @@ make
 make pvc
 ```
 或者
-请使用`xelatex`，对`ts_tech_doc_main.tex`文件进行编译。
+请使用`xelatex`，对`ts_docs_main.tex`文件进行编译。
 Windows下可以使用`TexMaker`,`TexStudio`等IDE，选中`xelatex`编译器进行编译。
 使用高级文本编辑器，如sublime等，否则可能因为ANSI、UTF-8等编码格式问题编译失败。
 

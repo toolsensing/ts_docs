@@ -32,7 +32,7 @@
 
 
 \NeedsTeXFormat{LaTeX2e}[1995/12/01]%
-\ProvidesClass{ts_tech_doc}[2020/04/25 v1.2 Standard LaTeX document class]
+\ProvidesClass{ts_docs}[2020/04/25 v1.2 Standard LaTeX document class]
 \ProcessOptions\relax% Terminates all options processing
 %% 读取基类
 \LoadClass[a4paper,12pt]{article}
@@ -40,7 +40,7 @@
 \RequirePackage{ifxetex}
 \RequireXeTeX
 \ifxetex\else
-\ClassError{ts_tech_doc}{You must use the `xelatex' driver\MessageBreak Please choose `xelatex'}{%
+\ClassError{ts_docs}{You must use the `xelatex' driver\MessageBreak Please choose `xelatex'}{%
 Just choose `xelatex', no `pdflatex' or `latex' and so on.}
 \fi
 
